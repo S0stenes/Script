@@ -1,5 +1,7 @@
 #!/bin/bash
 #Script para criacao de arquivos no fomato Script
+#OBS: O Script foi criado para quando executar seja criado um script dentro da pasta documentos.
+#Caso queira trocar a pasta aonde o Script será criado basta alterar o diretório.
 
 echo "Informe o nome do arquivo de Script; " 
 read nome
