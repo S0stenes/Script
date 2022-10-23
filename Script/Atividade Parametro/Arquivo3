@@ -4,11 +4,8 @@
 
 if [ $# -ne 1 ]
 then
-    echo("Esse comando faz com que renomeie todos os arquivos de uma pasta. [1] ")
-fi
-
-resposta=$1
-if [ $resposta -eq 1 ]
+    echo "Esse comando faz com que renomeie todos os arquivos de uma pasta. [1] "
+elif [ $1 -eq 1 ]
 then
     cd ~/Documentos/'Arquivos para teste'
     ls -1 > ~/Documentos/lista-de-arquivos.txt
@@ -18,4 +15,16 @@ then
         n=$(($n+1))
         mv "$line" "Arquivo$n"      
     done < ~/Documentos/lista-de-arquivos.txt
+elif [ $? -eq 0 ]
+then
+    echo ""
+else
+    echo "Ocorreu um problema o programa irá se encerrar..."
+    sleep 1
+    echo 'Encerrando em 3...'
+    sleep 1
+    echo 'Encerrando em 2..'
+    sleep
+    echo 'Encerrando em 1.'
+    exit
 fi
