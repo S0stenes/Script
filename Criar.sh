@@ -3,12 +3,12 @@
 
 echo "Informe o nome do arquivo de Script; " 
 read nome
-touch ~/Documentos/$nome.sh
-chmod +x ~/Documentos/$nome.sh
-echo '#!/bin/bash' > ~/Documentos/$nome.sh
-echo '#Atividade de Script' >> ~/Documentos/$nome.sh
+touch ~/Documentos/'Script - Github'/Script/$nome.sh
+chmod +x ~/Documentos/'Script - Github'/Script/$nome.sh
+echo '#!/bin/bash' > ~/Documentos/'Script - Github'/Script/$nome.sh
+echo '#Atividade de Script' >> ~/Documentos/'Script - Github'/Script/$nome.sh
 echo "--------------------Pronto seu script foi criado!---------------"
 sleep 1
 echo "--------------------------Abrindo o Arquivo!------------------- "
 sleep 2
-open ~/Documentos/$nome.sh
+open ~/Documentos/'Script - Github'/Script/$nome.sh
